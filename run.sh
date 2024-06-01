@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo apt install curl
-
 # Installing Ollama
 curl -fsSL https://ollama.com/install.sh | sh
 
