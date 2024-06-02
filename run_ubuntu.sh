@@ -23,6 +23,10 @@ sudo apt-get update
 # Install Docker Engine and components
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
+# Add user to the docker group
+sudo usermod -aG docker $USER
+newgrp docker
+
 # Verify that Docker is installed correctly
 sudo systemctl start docker
 sudo systemctl enable docker
